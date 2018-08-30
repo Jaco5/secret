@@ -1,0 +1,16 @@
+.card-img-top {
+    min-height: 480px;
+    box-align: center;
+}
+
+
+.window {
+    color: whitesmoke;
+    background: black;
+}
+
+#console, #readout {
+    color: green;
+    background: rgb(26, 25, 25);
+    /* min-height: 100px; */
+}
