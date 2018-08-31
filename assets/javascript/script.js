@@ -1,18 +1,15 @@
 
 
-var map = [
+var db = [
   {
-    question: "You are in your cabin, having just awoken from rest. As usual your throuat is dry and you feel cramped, the slightly thin air smells like              ozone.",
+    question: "You are in your cabin, having just awoken from rest. As usual your throat is dry and you feel cramped, the slightly thin air smells like              ozone.",
     answers: [
-      { title: "North", response: 1 },
-      { title: "South", response: 2 },
-      { title: "East", response: 3 },
-      { title: "West", response: 4 }
+      { title: "Exit", response: 1 },
     ],
     image: 'assets/images/'
   },
   {
-    question: "You are in the South, There is one exit",
+    question: "You are in the hallway",
     answers: [
       { title: "North", response: 0 }
     ],
