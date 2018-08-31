@@ -1,13 +1,13 @@
 
 
-var db = [
+var map = [
   {
-    'question': "Stepping in to your shuttle, Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle,Stepping in to your shuttle, ",
+    question: "You are in your cabin, having just awoken from rest. As usual your throuat is dry and you feel cramped, the slightly thin air smells like              ozone.",
     answers: [
-      { title: "Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink", response: 1 },
-      { title: "NorthSouthsouthstouth no dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink", response: 2 },
-      { title: "WestSouthsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsop the sink", response: 3 },
-      { title: "EasSouthsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthstouth north the dog goes up the sink Southsouthst", response: 4 }
+      { title: "North", response: 1 },
+      { title: "South", response: 2 },
+      { title: "East", response: 3 },
+      { title: "West", response: 4 }
     ],
     image: 'assets/images/'
   },
@@ -51,20 +51,18 @@ var db = [
 ];
 
 var currentLocation = 0;
-// The window is an object, global vars are properties of this obj, as global functions
-// are methods of it, hence the notation.
+
 function printCurrentLocation() {
-  // First, print index 0 message & image.
+
   $(".text").empty();
   $(".text").append("<p>" + db[currentLocation].question + "<p>");
   // $(".img").html = db[currentLocation].image;
   $(".console").empty();
-  // Loop through the answers array and create buttons for each, then print them.
   for (i = 0; i < db[currentLocation].answers.length; i++) {
     $(".console").append("<p><button onclick='setLocation(" + db[currentLocation].answers[i].response + ")'>" + db[currentLocation].answers[i].title + "</button></p>");
   }
-  }
-// Another window.method, update currentLocation, reprint the window.
+}
+
 function setLocation(button) {
   currentLocation = button;
   printCurrentLocation();

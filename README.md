@@ -60,3 +60,6 @@ As you travel, there will be random events and sometimes you have to make decisi
 If you find shops, you can buy things.
 
 If you are under attack, you can choose to fight or flee.
+
+--stats?
+    -dead or not dead, or allow chances?
