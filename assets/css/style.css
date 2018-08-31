@@ -1,16 +1,39 @@
-.card-img-top {
-    min-height: 480px;
-    box-align: center;
+* {
+    background: rgb(39, 38, 38);
+    color: antiquewhite;
 }
 
-
-.window {
-    color: whitesmoke;
+.img, .text, .console {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background: black;
+    border: solid 3px;
+    border-color: lightpink;
+    margin: auto;
 }
 
-#console, #readout {
-    color: green;
-    background: rgb(26, 25, 25);
-    /* min-height: 100px; */
+.img {
+    width: 1024px;
+    height: 500px;
+    margin-top: 15px;
+}
+
+.text {
+    width: 1024px;
+    height: 134px;
+    border-color: lightgreen;
+    
+}
+
+.console {
+    width: 1024px;
+    height: 138px;
+    border-color: lightblue;
+}
+
+p {
+    text-align: center;
+    background: black;
+    color: antiquewhite;
 }
