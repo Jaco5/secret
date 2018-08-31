@@ -33,33 +33,3 @@ _________________________________
 |      |  | | | /  |  |_ | \    |                     
 |_______________________________|
 
-- CAST _
-_ Brendan as : The Origin Master -
-_ Dylan as : Hub inhabitant 1 -
-_ Charlie as : Raccoon Charlie -
-_ Sara as : Mysterious Ghost in the Machine -
-_ Caleb as : Black Emperor of the Trilogy -
-- Evan as : Hub inhabitant 2 _
-
-
-3 wrong choices, "dings", then death, var dings = 0, if dings===3 {deathFunction}
-viewport 1140x480, 1140-640=500 (side panels?)
-
-You command an expedition in which you have a number of people, food, money, oxen (to carry things) and firepower.
-
-You have to reach 1000 km to your destination.
-
-Food is consumed as you go.
-
-You can only carry a certain amount of weight (depending on how many people and oxen you have).
-
-If you run out of crew members or food, it’s game over.
-
-As you travel, there will be random events and sometimes you have to make decisions.
-
-If you find shops, you can buy things.
-
-If you are under attack, you can choose to fight or flee.
-
---stats?
-    -dead or not dead, or allow chances?
